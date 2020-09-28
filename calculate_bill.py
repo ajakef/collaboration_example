@@ -1,6 +1,6 @@
 import numpy as np
 
-def calculate_tip(price_list):
+def calculate_tip(price_list, tip_rate = 15):
     """
     Calculate the total cost of a restaurant meal.
     Parameters:
@@ -12,7 +12,7 @@ def calculate_tip(price_list):
     float, total cost of meal
     """
     tax_multiplier = 1.06
-    tip_multiplier = 1.15
+    tip_multiplier = 1 + tip_rate/100
     return np.sum(price_list) * tax_multiplier * tip_multiplier
 
 
