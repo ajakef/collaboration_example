@@ -7,7 +7,7 @@ def calculate_tip(price_list, tax_rate = 6, tip_rate = 15):
     -----------
     price_list : list of floats, prices of all foods/drinks ordered [dollars]
     tax_rate
-
+    tip_rate : float, decided by user [%]
     Returns:
     --------
     float, total cost of meal
